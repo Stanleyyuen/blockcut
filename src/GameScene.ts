@@ -196,7 +196,7 @@ class GameScene extends egret.DisplayObjectContainer{
 	//碰撞检测
 	private hitListener():void{
 		var _this = this;
-		this.world.on("endContact",function(e:any){
+		this.world.on("endContact",function(e:any) {
 			for (var i = 0; i < _this.bricksBody.length; i++) {
 				var brickBody:p2.Body = _this.bricksBody[i];
 				if (e.bodyA===brickBody || e.bodyB===brickBody) {
